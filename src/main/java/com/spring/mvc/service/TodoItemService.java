@@ -18,6 +18,11 @@ public class TodoItemService {
 		return todoItemRepository.findAll();
 	}
 
+	// vet2?
+	public TodoItem findById(Long id) {
+		return todoItemRepository.getOne(id);
+	}
+
 	public TodoItem create(TodoItem todoItem) {
 		return todoItemRepository.save(todoItem);
 	}

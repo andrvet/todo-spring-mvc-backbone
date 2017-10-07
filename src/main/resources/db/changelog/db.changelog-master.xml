@@ -16,6 +16,11 @@
       <column name="CREATED" type="DATETIME">
         <constraints nullable="false" />
       </column>
+      <!-- vet3 -->
+      <column name="COMPLETED" type="BOOL">
+        <constraints nullable="true" />
+      </column>
+      
     </createTable>
   </changeSet>
   <changeSet id="seed-data" author="anon">

@@ -24,6 +24,18 @@ public class TodoItem {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date created = new Date();
 
+	// vet1
+	@Column
+	private Boolean completed;
+
+	public Boolean getCompleted() {
+		return completed;
+	}
+
+	public void setCompleted(Boolean completed) {
+		this.completed = completed;
+	}
+
 	public Long getId() {
 		return id;
 	}
